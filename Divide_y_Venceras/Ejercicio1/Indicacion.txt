@@ -1,0 +1,9 @@
+Ejercicio 1: Encontrar el Máximo y el Mínimo simultáneamente (Max-Min)
+En lugar de hacer un recorrido lineal clásico buscando el mayor y luego el menor por separado, dividimos el arreglo a la mitad de forma recursiva, obtenemos el máximo y mínimo de cada mitad, y luego los comparamos para hallar el resultado global.
+
+El Concepto
+Dividir: Dividimos el arreglo en dos mitades usando un punto medio.
+
+Conquistar: Resolvemos de forma recursiva para cada mitad hasta llegar a los casos base (un solo elemento o dos elementos).
+
+Combinar: Comparamos el mínimo de la izquierda con el de la derecha, y el máximo de la izquierda con el de la derecha para quedarnos con los extremos reales.

@@ -1,0 +1,13 @@
+Ejercicio 2: Encontrar un "Elemento Pico" (Peak Element)
+Un elemento se considera pico si es mayor o igual a sus vecinos adyacentes (para los elementos de los extremos, solo se evalúa su único vecino). 
+Este problema se puede resolver de manera secuencial en tiempo lineal O(n), pero aplicando Divide y Vencerás inspirado en la búsqueda binaria, podemos resolverlo en un asombroso tiempo logarítmico O(\log n).
+
+El Concepto
+
+Dividir: Calculamos el elemento del medio.
+
+Conquistar:Si el elemento medio es mayor o igual a sus vecinos, ¡ya encontramos un pico!
+Si el vecino izquierdo es mayor que el medio, entonces garantizamos que existe al menos un pico en la mitad izquierda.
+De lo contrario, el pico se encuentra en la mitad derecha.
+
+Combinar: En este caso no hace falta combinar resultados, ya que la misma búsqueda nos va descartando las mitades inservibles hasta darnos la respuesta directa.
